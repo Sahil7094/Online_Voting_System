@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <center>
+    <div id="headersection">
+        <h1>Online Voting System</h1>
+        
+    </div>
+    <hr>
+    
+    <div id="bodysection">
+        <h2>Login</h2>
+    <form action="api/login.php" method="post">
+        <input type="number" name="Mobile" placeholder="Enter mobile"> <br><br>
+        <input type="password" name="password" placeholder="Enter password"> <br><br>
+        <select name="role" id="drop">
+            <option value="voter">Voter</option>
+            <option value="group">Group</option>
+            <option value="admin">Admin</option>
+
+        </select><br><br>
+        <button id="loginbtn" type="submit">Login</button>
+
+    </form>
+    </div>
+    <p>New user? <a href="routes/register.html">Register here</a> </p>
+    </center>
+</body>
+</html>
